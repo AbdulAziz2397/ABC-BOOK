@@ -1,0 +1,138 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(./assets/img/download.jpg);
+    background-repeat: repeat;
+}
+
+/* ............................... start navbar ............................... */
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    width: 95%;
+    height: auto;
+    background-color: rgb(255, 255, 114);
+    font-family:"Bungee", sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 3px 4px 2px lightsalmon;
+    margin: 20px;
+    color: #ec8e00;
+}
+.alphabets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+.A-Z{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.A-Z>li{
+    list-style: none;
+    border: 2px solid rgb(0, 185, 0);
+    padding: 8px;
+    margin: 3px;
+    background-color: white;
+}
+.A-Z>li:hover{
+    box-shadow: 10px 10px 5px rgb(255, 255, 114);
+}
+.A-Z>li>a{
+    font-weight: bolder;
+    font-size: 18px;
+    color: #ec8e00;
+    font-family:"Bungee", sans-serif;
+}
+/* ............................... end navbar ............................... */
+/* ............................... start cards section ............................... */
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card{
+    width: 80%;
+    border: 2px solid green;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-top: 30px;flex-wrap: wrap;
+}
+.card>h1{
+    font-size: 200px;
+    font-family: "lobster", sans-serif;
+    font-weight: 900;
+    text-shadow: 5px 10px 10px black;
+    color: white;
+}
+.card>h3{
+    font-size: 50px;
+    font-family: "lobster", sans-serif;
+    font-weight: 700;
+    text-shadow: 5px 8px 10px black;
+    color: white;
+    
+}
+.card>img{
+    width: 300px;
+}
+
+@media screen and (max-width:450px) {
+    .card>h1{
+        font-size: 150px;
+    }    
+}
+
+.sky-blue{
+    background-color: #87cefa;
+}
+.sky-blue:hover{
+    background-image: linear-gradient( #87cefa, white);
+}
+.orng-shade{
+    background-color: #ffa07a;
+}
+.orng-shade:hover{
+    background-image: linear-gradient( #ffa07a, rgb(255, 145, 0));
+}
+.light-salmon{
+    background-color: #f08080;
+}
+.light-salmon:hover{
+    background-image: linear-gradient( #f08080, rgb(66, 253, 66));
+}
+/* ............................... end cards section ............................... */
+
+/* ................................top btn........................... */
+
+.btn > a > img{
+    width: 100px;
+    position: fixed;
+    z-index: 5;
+    top: 150px;
+    right: 0%;
+    opacity: 0.5;
+}
+.btn > a > img:hover{
+    opacity: 1;
+}

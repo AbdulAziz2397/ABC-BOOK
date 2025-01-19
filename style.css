@@ -149,6 +149,9 @@ body{
     .card>h3{
         font-size: 30px;
     }
+    .card>img{
+        width: 250px;
+    }
 }
 @media screen and (max-width: 563px){
     .A-Z{

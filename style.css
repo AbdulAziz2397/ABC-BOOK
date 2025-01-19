@@ -97,11 +97,6 @@ body{
     width: 300px;
 }
 
-@media screen and (max-width:450px) {
-    .card>h1{
-        font-size: 150px;
-    }    
-}
 
 .sky-blue{
     background-color: #87cefa;
@@ -126,13 +121,39 @@ body{
 /* ................................top btn........................... */
 
 .btn > a > img{
-    width: 100px;
+    width: 80px;
     position: fixed;
-    z-index: 5;
     top: 150px;
-    right: 0%;
+    right: 10px;
     opacity: 0.5;
 }
 .btn > a > img:hover{
     opacity: 1;
+}
+
+@media screen and (max-width:450px) {
+    .card>h1{
+        font-size: 150px;
+    }
+    .card>h3{
+        font-size: 40px;
+    }
+    .btn > a > img{
+        width: 50px;
+    }
+}
+@media screen and (max-width:360px) {
+    .card>h1{
+        font-size: 120px;
+    }
+    .card>h3{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 563px){
+    .A-Z{
+        overflow: scroll;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }    
 }
